@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\bin\Debug\TriangleAreaProject.exe.config
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\bin\Debug\TriangleAreaProject.exe
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\bin\Debug\TriangleAreaProject.pdb
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\obj\Debug\TriangleAreaProject.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\obj\Debug\TriangleAreaProject.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\obj\Debug\TriangleAreaProject.exe
+C:\Users\Korisnik\Desktop\TriangleAreaProjectSolution\TriangleAreaProject\obj\Debug\TriangleAreaProject.pdb
