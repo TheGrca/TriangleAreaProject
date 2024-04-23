@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace TriangleAreaProject
 {
+
     public class Program
     {
         static void Main(string[] args)
         {
             int pointNumber = 0;
-            bool isNumber = false;
             bool tryAgain = true;
             while (tryAgain)
             {
-
+                bool isNumber = false;
                 while (!isNumber)
                 {
                     Console.WriteLine("Insert a number of how many points you want to insert: ");
@@ -24,6 +24,10 @@ namespace TriangleAreaProject
                         if (pointNumber <= 0)
                         {
                             Console.WriteLine("Point number cannot be a negative number nor zero!\n");
+                        }
+                        else if(pointNumber <= 2)
+                        {
+                            Console.WriteLine("Point number cannot be a less then 3!\n");
                         }
                         else
                         {
@@ -51,7 +55,21 @@ namespace TriangleAreaProject
                             Console.WriteLine("Y => ");
                             if (int.TryParse(Console.ReadLine(), out y))
                             {
-                                isValidPoint = true;
+                                bool isUnique = true;
+                                for (int j = 0; j < i; j++)
+                                {
+                                    if (points[j].X == x && points[j].Y == y)
+                                    {
+                                        isUnique = false;
+                                        Console.WriteLine("This point already exists. Please enter different coordinates.");
+                                        break;
+                                    }
+                                }
+
+                                if (isUnique)
+                                {
+                                    isValidPoint = true;
+                                }
                             }
                             else
                             {
@@ -66,12 +84,12 @@ namespace TriangleAreaProject
                     points[i] = new CoordinatePoint(x, y);
                 }
 
-                FindLargestTriangle(points);
-                Console.WriteLine("Do you want to calculate again? (Type any key to continue or 'No' to exit!)");
-                string result = Console.ReadLine();
-                if (result.ToLower().Replace(" ", "").Equals("no")){
-                    tryAgain = false;
-                }
+                    FindLargestTriangle(points);
+                    Console.WriteLine("Do you want to calculate again? (Type any key to continue or 'No' to exit!)");
+                    string result = Console.ReadLine();
+                    if (result.ToLower().Replace(" ", "").Equals("no")){
+                        tryAgain = false;
+                     }
             }
         }
 
